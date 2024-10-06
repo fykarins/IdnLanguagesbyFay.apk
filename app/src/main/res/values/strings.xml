@@ -1,0 +1,7 @@
+<resources>
+    <string name="app_name">IdnLanguagesbyFay</string>
+    <string name="about_photo">Foto tentang Fay Ivana Karin</string>
+    <string name="language_photo">Foto dari Setiap Bahasa</string>
+    <string name="about_photo_background">Background Foto</string>
+    <string name="detail_photo">Detail dari Setiap Foto</string>
+</resources>

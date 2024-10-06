@@ -1,0 +1,141 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/scroll_detail"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:padding="16dp"
+    android:background="@drawable/background">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+
+        <ImageView
+            android:id="@+id/iv_detail_photo"
+            android:layout_width="match_parent"
+            android:layout_height="400dp"
+            android:contentDescription="@string/detail_photo"
+            android:fontFamily="sans-serif-medium"
+            android:scaleType="centerCrop"
+            android:src="@drawable/main_7" />
+
+        <TextView
+            android:id="@+id/tv_detail_name"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:fontFamily="sans-serif-medium"
+            android:paddingTop="16dp"
+            android:text="ACEH"
+            android:textSize="28sp"
+            android:textStyle="bold" />
+
+        <TextView
+            android:id="@+id/tv_detail_description"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:paddingTop="8dp"
+            android:text="Berikut merupakan informasi Bahasa di Aceh: "
+            android:textSize="16sp" />
+
+        <!-- ISI TABEL -->
+        <TableLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:paddingTop="16dp"
+            android:stretchColumns="1">
+
+            <TableRow android:background="#FFDDDDDD">
+                <TextView
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:padding="10dp"
+                    android:maxWidth="0dp"
+                    android:layout_weight="1"
+                    android:text="Bahasa"
+                    android:textStyle="bold" />
+                <TextView
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:padding="10dp"
+                    android:maxWidth="0dp"
+                    android:layout_weight="2"
+                    android:text="Persebaran Wilayah"
+                    android:textStyle="bold" />
+            </TableRow>
+
+            <TableRow>
+                <TextView
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:padding="8dp"
+                    android:maxWidth="0dp"
+                    android:layout_weight="1"
+                    android:text="Aceh" />
+                <TextView
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:padding="8dp"
+                    android:maxWidth="0dp"
+                    android:layout_weight="2"
+                    android:text="Bahasa Aceh dituturkan di wilayah pesisir Provinsi Aceh yang terbentang dari Selat Malaka sampai ke pantai barat menghadap Lautan Hindia. Bahasa Aceh secara umum dipakai di Kota Langsa, Kabupaten Aceh Utara, Kota Lhokseumawe, Kabupaten Bireun, Kabupaten Pidie Jaya, Kabupaten Pidie, Kabupaten Aceh Besar, Kota Banda Aceh, dan juga di daerah Kota Sabang." />
+            </TableRow>
+
+            <TableRow android:layout_height="wrap_content">
+                <TextView
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:padding="8dp"
+                    android:maxWidth="0dp"
+                    android:layout_weight="1"
+                    android:text="Devayan" />
+                <TextView
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:padding="8dp"
+                    android:maxWidth="0dp"
+                    android:layout_weight="2"
+                    android:text="Bahasa Devayan dituturkan di wilayah Desa Teluk Nibung, Kecamatan Pulau Banyak, Kabupaten Aceh Singkil (pemekaran dari Kabupaten Aceh Selatan) dan di Kecamatan Simeulue Timur, Kabupaten Simeulue, Provinsi Aceh." />
+            </TableRow>
+
+            <TableRow>
+                <TextView
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:padding="8dp"
+                    android:maxWidth="0dp"
+                    android:layout_weight="1"
+                    android:text="Gayo" />
+                <TextView
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:padding="8dp"
+                    android:maxWidth="0dp"
+                    android:layout_weight="2"
+                    android:text="Bahasa Gayo dituturkan di Kecamatan Tanah Jambo Aye,Kabupaten Aceh Utara; Kecamatan Tamiang Hulu, Kabupaten Aceh Tamiang;  Kecamatan Blangkejeren, Kabupaten Gayo Lues;  Kecamatan Silih Nara, Laut Tawar, Bebesan, Bintang, dan Linge, Kabupaten Aceh Tengah; Kecamatan Bandar, Kabupaten Bener Meriah (pemekaran dari Kabupaten Aceh Tengah); dan Kabupaten Aceh Tenggara, Provinsi Aceh." />
+            </TableRow>
+
+            <TableRow>
+                <TextView
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:padding="8dp"
+                    android:maxWidth="0dp"
+                    android:layout_weight="1"
+                    android:text="Minangkabau" />
+                <TextView
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:padding="8dp"
+                    android:maxWidth="0dp"
+                    android:layout_weight="2"
+                    android:text="Bahasa Minangkabau yang berada di wilayah Provinsi Aceh dituturkan di Desa Seruway/Peukan, Kecamatan Seruway; Desa Sunting, Kecamatan Bandar Pusaka, Kabupaten Aceh Tamiang; Desa Pisang, Kecamatan Labuhan Haji; Desa Lubuk Kayu, Kecamatan Samadua, Kabupaten Aceh Selatan; Desa Gosong Telaga Barat." />
+            </TableRow>
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="40dp" />
+
+        </TableLayout>
+    </LinearLayout>
+</ScrollView>

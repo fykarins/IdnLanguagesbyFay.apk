@@ -1,0 +1,141 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/scroll_detail"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:padding="16dp"
+    android:background="@drawable/background">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+
+        <ImageView
+            android:id="@+id/iv_detail_photo"
+            android:layout_width="match_parent"
+            android:layout_height="400dp"
+            android:contentDescription="@string/detail_photo"
+            android:fontFamily="sans-serif-medium"
+            android:scaleType="centerCrop"
+            android:src="@drawable/main_10" />
+
+        <TextView
+            android:id="@+id/tv_detail_name"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:fontFamily="sans-serif-medium"
+            android:paddingTop="16dp"
+            android:text="LAMPUNG"
+            android:textSize="28sp"
+            android:textStyle="bold" />
+
+        <TextView
+            android:id="@+id/tv_detail_description"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:paddingTop="8dp"
+            android:text="Berikut merupakan informasi Bahasa di Lampung: "
+            android:textSize="16sp" />
+
+        <!-- ISI TABEL -->
+        <TableLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:paddingTop="16dp"
+            android:stretchColumns="1">
+
+            <TableRow android:background="#FFDDDDDD">
+                <TextView
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:padding="10dp"
+                    android:maxWidth="0dp"
+                    android:layout_weight="1"
+                    android:text="Bahasa"
+                    android:textStyle="bold" />
+                <TextView
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:padding="10dp"
+                    android:maxWidth="0dp"
+                    android:layout_weight="2"
+                    android:text="Persebaran Wilayah"
+                    android:textStyle="bold" />
+            </TableRow>
+
+            <TableRow>
+                <TextView
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:padding="8dp"
+                    android:maxWidth="0dp"
+                    android:layout_weight="1"
+                    android:text="Lampung" />
+                <TextView
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:padding="8dp"
+                    android:maxWidth="0dp"
+                    android:layout_weight="2"
+                    android:text="Bahasa Lampung dituturkan oleh masyarakat di wilayah Desa Belambangan, Kecamatan Abung Selatan, Desa Cahaya Negeri, Kecamatan Abung Barat, Desa Gunung Cahaya, Kecamatan Pakuan Ratu, Kabupaten Way Kanan; Desa Banjar Agung, Kecamatan Menggala, Desa Pulau Panggung, Kecamatan Abung Tinggi, Kabupaten Lampung Utara." />
+            </TableRow>
+
+            <TableRow android:layout_height="wrap_content">
+                <TextView
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:padding="8dp"
+                    android:maxWidth="0dp"
+                    android:layout_weight="1"
+                    android:text="Basemah" />
+                <TextView
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:padding="8dp"
+                    android:maxWidth="0dp"
+                    android:layout_weight="2"
+                    android:text="Bahasa Basemah dituturkan di wilayah Desa Juku Batu, Kecamatan Banjit, Kabupaten Way Kana; Desa Way Petai, Kecamatan Sumber Jaya, Kabupaten Lampung Barat; Desa Palas Pasemah, Kecamatan Palas, Desa Rangai Tri Tunggal, Kecamatan Katibung, Kabupaten Lampung Selatan; Desa Sungai Badak, Kecamatan Mesuji,  Kabupaten Mesuji; dan Desa Cabang Empat, Kecamatan Abung Selatan, Kabupaten Lampung Utara." />
+            </TableRow>
+
+            <TableRow>
+                <TextView
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:padding="8dp"
+                    android:maxWidth="0dp"
+                    android:layout_weight="1"
+                    android:text="Bugis" />
+                <TextView
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:padding="8dp"
+                    android:maxWidth="0dp"
+                    android:layout_weight="2"
+                    android:text="Bahasa Bugis dituturkan di Kelurahan Kota Karang, Kecamatan Telukbetung Timur, Kota Bandar Lampung." />
+            </TableRow>
+
+            <TableRow>
+                <TextView
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:padding="8dp"
+                    android:maxWidth="0dp"
+                    android:layout_weight="1"
+                    android:text="Jawa" />
+                <TextView
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:padding="8dp"
+                    android:maxWidth="0dp"
+                    android:layout_weight="2"
+                    android:text="Bahasa Jawa yang berada di Provinsi Lampung dituturkan di Provinsi Lampung.Wilayah tutur bahasa Jawa yang berada di Provinsi Lampung tersebar dibeberapa wilayah, antara lain(1) Desa SriDadi, Kecamatan Wonosobo, Kabupaten Tanggamus; (2) Desa Rawi, Kecamatan Penengahan, Kabupaten Lampung Selatan; (3) Desa Bumi Nabung, Kecamatan Bumi Nabung, Kabupaten Lampung Tengah; (4) Desa Sambikarto, Kecamatan Sekampung, Kabupaten Lampung Timur; (5) Desa Klaten, Kecamatan Penengahan, Kabupaten Lampung Selatan." />
+            </TableRow>
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="40dp" />
+
+        </TableLayout>
+    </LinearLayout>
+</ScrollView>

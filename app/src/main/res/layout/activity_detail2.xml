@@ -1,0 +1,90 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/scroll_detail"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:padding="16dp"
+    android:background="@drawable/background">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+
+        <ImageView
+            android:id="@+id/iv_detail_photo"
+            android:layout_width="match_parent"
+            android:layout_height="400dp"
+            android:contentDescription="@string/detail_photo"
+            android:fontFamily="sans-serif-medium"
+            android:scaleType="centerCrop"
+            android:src="@drawable/main_2" />
+
+        <TextView
+            android:id="@+id/tv_detail_name"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:fontFamily="sans-serif-medium"
+            android:paddingTop="16dp"
+            android:text="DI YOGYAKARTA"
+            android:textSize="28sp"
+            android:textStyle="bold" />
+
+        <TextView
+            android:id="@+id/tv_detail_description"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:paddingTop="8dp"
+            android:text="Berikut merupakan informasi Bahasa di DI Yogyakarta: "
+            android:textSize="16sp" />
+
+        <!-- ISI TABEL -->
+        <TableLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:paddingTop="16dp"
+            android:stretchColumns="1">
+
+            <TableRow android:background="#FFDDDDDD">
+                <TextView
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:padding="10dp"
+                    android:maxWidth="0dp"
+                    android:layout_weight="1"
+                    android:text="Bahasa"
+                    android:textStyle="bold" />
+                <TextView
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:padding="10dp"
+                    android:maxWidth="0dp"
+                    android:layout_weight="2"
+                    android:text="Persebaran Wilayah"
+                    android:textStyle="bold" />
+            </TableRow>
+
+            <TableRow>
+                <TextView
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:padding="8dp"
+                    android:maxWidth="0dp"
+                    android:layout_weight="1"
+                    android:text="Jawa" />
+                <TextView
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:padding="8dp"
+                    android:maxWidth="0dp"
+                    android:layout_weight="2"
+                    android:text="Bahasa Jawa merupakan bahasa daerah yang paling banyak dituturkan masyarakat yang tinggal di Pulau Jawa. Bahasa Jawa di Pulau Jawa dituturkan oleh etnik Jawa yang di antaranya tinggal di Provinsi Jawa Tengah, Daerah Istimewa Yogyakarta (DIY), Jawa Timur, Jawa Barat, dan Banten. Selain dituturkan di Pulau Jawa, bahasa ini juga memiliki sebaran di beberapa wilayah Indonesia lainnya, seperti Lampung, Aceh, Riau, Kepulauan Riau (Kepri), Bengkulu, Jambi, Bali, NTB, Kalimantan Timur, Sumatra Utara, Kalimantan Selatan, dan Sulawesi Tenggara. Bahkan bahasa Jawa juga dituturkan di luar Indonesia.Bahasa Jawa yang dituturkan di Provinsi DIY merupakan bahasa Jawa dialek Solo-Yogya. Dialek Solo-Yogya menyebar di seluruh DIY." />
+            </TableRow>
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="40dp" />
+
+        </TableLayout>
+    </LinearLayout>
+</ScrollView>

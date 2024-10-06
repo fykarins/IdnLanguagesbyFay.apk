@@ -1,0 +1,141 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/scroll_detail"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:padding="16dp"
+    android:background="@drawable/background">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+
+        <ImageView
+            android:id="@+id/iv_detail_photo"
+            android:layout_width="match_parent"
+            android:layout_height="400dp"
+            android:contentDescription="@string/detail_photo"
+            android:fontFamily="sans-serif-medium"
+            android:scaleType="centerCrop"
+            android:src="@drawable/main_5" />
+
+        <TextView
+            android:id="@+id/tv_detail_name"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:fontFamily="sans-serif-medium"
+            android:paddingTop="16dp"
+            android:text="SULAWESI TENGAH"
+            android:textSize="28sp"
+            android:textStyle="bold" />
+
+        <TextView
+            android:id="@+id/tv_detail_description"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:paddingTop="8dp"
+            android:text="Berikut merupakan informasi Bahasa di Sulawesi Tengah: "
+            android:textSize="16sp" />
+
+        <!-- ISI TABEL -->
+        <TableLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:paddingTop="16dp"
+            android:stretchColumns="1">
+
+            <TableRow android:background="#FFDDDDDD">
+                <TextView
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:padding="10dp"
+                    android:maxWidth="0dp"
+                    android:layout_weight="1"
+                    android:text="Bahasa"
+                    android:textStyle="bold" />
+                <TextView
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:padding="10dp"
+                    android:maxWidth="0dp"
+                    android:layout_weight="2"
+                    android:text="Persebaran Wilayah"
+                    android:textStyle="bold" />
+            </TableRow>
+
+            <TableRow>
+                <TextView
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:padding="8dp"
+                    android:maxWidth="0dp"
+                    android:layout_weight="1"
+                    android:text="Bada" />
+                <TextView
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:padding="8dp"
+                    android:maxWidth="0dp"
+                    android:layout_weight="2"
+                    android:text="Bahasa Bada dituturkan di (1) Desa Maholo, Kecamatan Lore Timur, Kabupaten Poso; (2) Desa Badangkaia, Kecamatan Lore Selatan, Kabupaten Poso; dan (3) Desa Ampibabo, Kecamatan Ampibabo, Kabupaten Parigi Moutong, Provinsi Sulawesi Tengah." />
+            </TableRow>
+
+            <TableRow android:layout_height="wrap_content">
+                <TextView
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:padding="8dp"
+                    android:maxWidth="0dp"
+                    android:layout_weight="1"
+                    android:text="Bajo" />
+                <TextView
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:padding="8dp"
+                    android:maxWidth="0dp"
+                    android:layout_weight="2"
+                    android:text="Bahasa Bajo dituturkan oleh masyarakat di (1) Desa Bajo, Kecamatan Bolano, Kabupaten Parigi Moutong; (2) Desa Meli, Kecamatan Balaesang, Kabupaten Donggala; (3) Desa Santigi, Kecamatan ToliToli Utara, Kabupaten ToliToli; (4) Desa Laulalang, Kecamatan ToliToli Utara, Kabupaten ToliToli; (5) Desa Jaya Bakti, Kecamatan Pagimana, Kabupaten Banggai; (6) Desa Kolo Bawah, Kecamatan Mamosalato, Kabupaten Morowali Utara; dan (7) Desa Buajangka, Kecamatan Bungku Selatan, Kabupaten Morowali, Provinsi Sulawesi Tengah." />
+            </TableRow>
+
+            <TableRow>
+                <TextView
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:padding="8dp"
+                    android:maxWidth="0dp"
+                    android:layout_weight="1"
+                    android:text="Balaesang" />
+                <TextView
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:padding="8dp"
+                    android:maxWidth="0dp"
+                    android:layout_weight="2"
+                    android:text="Bahasa Balaesang diduga memiliki tanah asal di Kabupaten Donggala dan Parigi Moutong, Provinsi Sulawesi Tengah. Bahasa ini dituturkan di (1) Desa Ketong dan Kamonji, Kecamatan Balaesang Tanjung, Kabupaten Donggala; (2) Desa Alindau, Kecamatan Sindue Tobata, Kabupaten Donggala; dan (3) Desa Kasimbar, Kecamatan Kasimbar, Kabupaten Parigi Moutong, Sulawesi Tengah." />
+            </TableRow>
+
+            <TableRow>
+                <TextView
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:padding="8dp"
+                    android:maxWidth="0dp"
+                    android:layout_weight="1"
+                    android:text="Balantak" />
+                <TextView
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:padding="8dp"
+                    android:maxWidth="0dp"
+                    android:layout_weight="2"
+                    android:text="Bahasa Balantak ditemukan di (1) Desa Tangeban, Kecamatan Masama, Kabupaten Banggai; (2) Desa Dolom, Kecamatan Lobu, Kabupaten Banggai; dan (3) Desa Sobol, Kecamatan Mantoh, Kabupaten Banggai, Provinsi Sulawesi Tengah." />
+            </TableRow>
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="40dp" />
+
+        </TableLayout>
+    </LinearLayout>
+</ScrollView>

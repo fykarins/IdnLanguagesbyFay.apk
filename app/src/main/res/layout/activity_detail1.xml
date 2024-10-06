@@ -1,0 +1,153 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <!-- Scrollable Content -->
+    <ScrollView
+        android:id="@+id/scroll_detail"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:padding="16dp"
+        android:background="@drawable/background">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <ImageView
+                android:id="@+id/iv_detail_photo"
+                android:layout_width="match_parent"
+                android:layout_height="400dp"
+                android:contentDescription="@string/detail_photo"
+                android:scaleType="centerCrop"
+                android:src="@drawable/main_1" />
+
+            <TextView
+                android:id="@+id/tv_detail_name"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:fontFamily="sans-serif-medium"
+                android:paddingTop="16dp"
+                android:text="DKI JAKARTA"
+                android:textSize="28sp"
+                android:textStyle="bold" />
+
+            <TextView
+                android:id="@+id/tv_detail_description"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:paddingTop="8dp"
+                android:text="Berikut merupakan informasi Bahasa di DKI Jakarta: "
+                android:textSize="16sp" />
+
+            <!-- ISI TABEL -->
+            <TableLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:paddingTop="16dp"
+                android:stretchColumns="1">
+
+                <TableRow android:background="#FFDDDDDD">
+                    <TextView
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:padding="10dp"
+                        android:layout_weight="1"
+                        android:text="Bahasa"
+                        android:textStyle="bold" />
+                    <TextView
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:padding="10dp"
+                        android:layout_weight="2"
+                        android:text="Persebaran Wilayah"
+                        android:textStyle="bold" />
+                </TableRow>
+
+                <TableRow>
+                    <TextView
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:padding="8dp"
+                        android:layout_weight="1"
+                        android:text="Bugis" />
+                    <TextView
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:padding="8dp"
+                        android:layout_weight="2"
+                        android:text="Bahasa Bugis merupakan bahasa yang berasal di Pulau Sulawesi. Bahasa ini juga dituturkan di Daerah Khusus Ibukota (DKI) Jakarta, yaitu di Kecamatan Kepulauan Seribu Utara, Kabupaten Administratif Kepulauan Seribu, DKI Jakarta" />
+                </TableRow>
+
+                <TableRow android:layout_height="wrap_content">
+                    <TextView
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:padding="8dp"
+                        android:layout_weight="1"
+                        android:text="Mandarin DKI Jakarta" />
+                    <TextView
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:padding="8dp"
+                        android:layout_weight="2"
+                        android:text="Berdasarkan penelitian yang telah dilakukan, bahasa Mandarin DKI Jakarta yang terdapat di Provinsi Daerah Khusus Ibu Kota (DKI) Jakarta dituturkan oleh masyarakat di Kelurahan Glodok, Kecamatan Taman Sari, Kota Administrasi Jakarta Barat. Di Provinsi NTB, bahasa Mandarin dituturkan oleh masyarakat yang berada di Kecamatan Ampenan Tengah, Kota Mataram" />
+                </TableRow>
+
+                <TableRow>
+                    <TextView
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:padding="8dp"
+                        android:layout_weight="1"
+                        android:text="Melayu" />
+                    <TextView
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:padding="8dp"
+                        android:layout_weight="2"
+                        android:text="Bahasa Melayu dituturkan oleh masyarakat Betawi DKI Jakarta. Bahasa itu oleh masyarakat Betawi disebut bahasa Betawi atau Melayu Betawi" />
+                </TableRow>
+
+                <TableRow>
+                    <TextView
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:padding="8dp"
+                        android:layout_weight="1"
+                        android:text="Sunda" />
+                    <TextView
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:padding="8dp"
+                        android:layout_weight="2"
+                        android:text="Bahasa Sunda dituturkan oleh sebagian besar masyarakat Sunda di kawasan Pulau Jawa bagian barat. Di Provinsi DKI Jakarta, bahasa Sunda dituturkan di Pulau Lancang Besar, Kelurahan Pulau Pari, Kecamatan Kepulauan Seribu Utara, Administrasi Kepulauan Seribu dan di Jatinegara" />
+                </TableRow>
+
+                <View
+                    android:layout_width="match_parent"
+                    android:layout_height="40dp" />
+
+            </TableLayout>
+        </LinearLayout>
+    </ScrollView>
+
+    <!-- Tombol back (statis di atas) -->
+    <ImageButton
+        android:id="@+id/btn_back"
+        android:layout_width="48dp"
+        android:layout_height="48dp"
+        android:layout_marginStart="16dp"
+        android:layout_marginTop="16dp"
+        android:background="@android:color/transparent"
+        android:padding="8dp"
+        android:src="@drawable/baseline_arrow_back_24"
+        android:contentDescription="Back"
+        android:clickable="true"
+        android:focusable="true"/>
+
+</FrameLayout>
+
+
